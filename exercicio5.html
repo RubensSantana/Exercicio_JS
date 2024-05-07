@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 5</title>
+    </head>
+    <body>
+        <h1>Lista de Exercícios - JS</h1>
+        
+        <h3>Exercício 5</h3>
+        <p>
+            5. Escreva um programa em JavaScript que exiba na tela uma mensagem
+            de acordo com o valor de uma variável. Se a variável for igual a "a", exiba
+            "A". Se a variável for igual a "b", exiba "B". Se a variável não for nem "a"
+            nem "b", exiba "Outra letra".
+        </p>
+
+        <p>
+            <script>
+                var letra = prompt("Digite a letra a, b, ou qualquer outra letra: ");
+                                
+                if (letra == "a"){
+                    document.write("A letra escolhida foi: 'A'");
+                }
+                else if (letra == "b"){
+                    document.write("A letra escolhida foi: 'B'");
+                }
+                else{
+                    document.write("A letra escolhida foi: 'Outra letra'");
+                }
+            </script>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 7</title>
+    </head>
+    <body>
+        <h2>Exercício 7</h2>
+        <p>
+            7. Escreva um programa em JavaScript que exiba na tela o fatorial de um
+            número fornecido pelo usuário.
+        </p>
+        Fatorial de: <input id="numero" type="value"> <br />
+        <button onclick="fatorial()">Exibir</button><br />
+        Resposta: <div id='resposta'></div>
+
+        <script>
+            function fatorial(){
+                var numero = parseInt(document.getElementById('numero').value);
+                var resposta = document.getElementById('resposta');
+                var resultado=1;
+              
+                for(var i=1 ; i<=numero ; i++)
+                 resultado *= i;
+              
+                resposta.innerHTML =resultado;
+              }
+        </script>
+
+    </body>
+</html>

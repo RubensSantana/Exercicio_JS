@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 3</title>
+    </head>
+    <body>
+        <h1>Lista de Exercícios - JS</h1>
+        
+        <h3>Exercício 3</h3>
+        <p>
+            3. Escreva um programa em JavaScript que exiba na tela uma mensagem
+            de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+            "Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+            "Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor".
+        </p>
+        <p>
+            <script>
+                let nota = prompt("Digite uma nota de 1 a 10: ");
+                document.write("Nota: " + nota + ". ");
+                
+                if (nota < 6){
+                    document.write("REPROVADO");
+                }
+                else if (nota >= 6 && nota <= 8){
+                    document.write("APROVADO");
+                }
+                else if (nota > 8 && nota <= 10){
+                    document.write("APROVADO COM LOUVOR");
+                }                
+                else{
+                document.write("NOTA INVÁLIDA");
+                }
+            </script>
+        </p>
+    </body>
+</html>
